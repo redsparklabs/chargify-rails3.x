@@ -1,0 +1,21 @@
+<h3>Payment History</h3>
+
+<table class="table table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Type</th>
+    <th>Amount</th>
+    <th>Description</th>
+  </tr>
+
+<% @transactions.each do |transaction| %>
+  <tr>
+    <td><%= transaction.created_at %></td>
+    <td><%= transaction.type %></td>
+    <td><%= ((transaction.amount_in_cents)/100).to_s + ' USD' %></td>
+    <td><%= transaction.memo %></td>
+ </tr>
+<% end %>
+</table>
+
+

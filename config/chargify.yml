@@ -1,0 +1,8 @@
+development:
+  subdomain: REPLACE_SUBDOMAIN
+  api_key: REPLACE_API_KEY
+  site_key: REPLACE_SITE_KEY
+production:
+  subdomain: REPLACE_SUBDOMAIN
+  api_key: REPLACE_API_KEY
+  site_key: REPLACE_SITE_KEY
